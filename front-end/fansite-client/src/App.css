@@ -5,6 +5,21 @@
 }
 
 
+.text-content {
+  margin-bottom: 20px; /* Add some margin between text and image */
+}
+
+.image-container {
+  text-align: center; /* Center the image horizontally */
+}
+
+.responsive-image {
+  max-width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
 
 
 

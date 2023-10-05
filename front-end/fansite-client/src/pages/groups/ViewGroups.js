@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { findAllGroups } from '../../services/data';
 
 function ViewGroups() {
   const [groups, setGroups] = useState([]);
+  const navigate = useNavigate();
+
+  const handleGroupClick = (groupId) => {
+    navigate(`/groups/${groupId}`); 
+  };
 
   useEffect(() => {
     findAllGroups()
@@ -29,7 +35,7 @@ function ViewGroups() {
           </thead>
           <tbody>
             {groups.map((group) => (
-              <tr class="table-primary" key={group.group_id}>
+              <tr className="table-primary" key={group.group_id} onClick={() => handleGroupClick(group.group_id)}>
                 <td>{group.group_name}</td>
                 <td>{group.date_formed}</td>
               </tr>
