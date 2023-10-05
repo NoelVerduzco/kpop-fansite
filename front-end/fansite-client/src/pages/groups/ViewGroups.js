@@ -7,7 +7,6 @@ function ViewGroups() {
   useEffect(() => {
     findAllGroups()
       .then((data) => {
-        // Ensure 'data' is an array of groups
         if (Array.isArray(data)) {
           setGroups(data);
         } else {
@@ -19,24 +18,25 @@ function ViewGroups() {
 
   return (
     <div>
-      <h2>Group List</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Group ID</th>
-            <th>Group Name</th>
-            <th>Date Formed</th>
-          </tr>
-        </thead>
-        <tbody>
-          {groups.map((group) => (
-            <tr key={group.group_id}>
-              <td>{group.group_name}</td>
-              <td>{group.date_formed}</td>
+      <h1 className="text-center text-primary">KPop Groups</h1>
+      <div className="table-container"> 
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Group Name</th>
+              <th scope="col">Date Formed</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {groups.map((group) => (
+              <tr class="table-primary" key={group.group_id}>
+                <td>{group.group_name}</td>
+                <td>{group.date_formed}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
