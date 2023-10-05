@@ -18,7 +18,38 @@
   height: auto; /* Maintain the image's aspect ratio */
 }
 
+.card-flip {
+  position: relative;
+  perspective: 1000px; /* Set the perspective for 3D effect */
 
+  /* Front of the card */
+  .card-body {
+    transform-style: preserve-3d; /* Preserve 3D transformations on the children */
+    transition: transform 0.5s; /* Add a smooth transition effect */
+
+    /* Initially, the card is face down */
+    transform: rotateY(0deg);
+  }
+
+  /* Back of the card */
+  .card-back {
+    display: none; /* Initially, the back is hidden */
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: rotateY(180deg); /* Rotate 180 degrees to show the back */
+  }
+
+  /* Hover effect: When hovering, flip the card */
+  &:hover {
+    .card-body {
+      transform: rotateY(180deg); /* Flip to the back */
+    }
+    .card-back {
+      display: block; /* Show the back */
+      transform: rotateY(0deg); /* Flip to the front */
+    }
+  }
+}
 
 
 

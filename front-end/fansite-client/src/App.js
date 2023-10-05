@@ -11,17 +11,23 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import ViewGroups from './pages/groups/ViewGroups';
 import ViewGroup from './pages/groups/ViewGroup'; 
+import ViewIdol from './pages/idols/ViewIdol';
+import ViewIdols from './pages/idols/ViewIdols';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/groups/:groupId" element={<ViewGroup />} />
         <Route path="/groups" element={<ViewGroups />} />
+        <Route path="/idol/:idolId" element={<ViewIdol />} />
+        <Route path="/idols" element={<ViewIdols />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </Router>
   );
