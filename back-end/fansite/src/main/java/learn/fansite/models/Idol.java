@@ -1,20 +1,37 @@
 package learn.fansite.models;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Idol {
 
+    @Min(value = 0)
     private int id;
+    @NotBlank(message = "Stage Name is required")
     private String stageName;
+
     private String position;
+    @NotBlank(message = "Nationality is required")
     private String nationality;
+    @PastOrPresent(message = "Birthday cannot be in the future")
     private LocalDate birthday;
+    @Min(value = 57)
+    @Max(value = 251)
     private int heightInCm;
+    @NotBlank(message = "MBTI Type is required")
     private String mbtiType;
+    @NotBlank(message = "Zodiac Sign is required")
     private String zodiacSign;
+    @NotBlank(message = "Chinese Zodiac Sign is required")
     private String chineseZodiacSign;
+    @NotBlank(message = "Favorite Color is required")
     private String favoriteColor;
+    @Min(value = 0)
     private int groupId;
 
     public Idol() {
