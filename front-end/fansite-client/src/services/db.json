@@ -1,0 +1,86 @@
+{
+  "groups": [
+    {
+      "group_id": 1,
+      "group_name": "NewJeans",
+      "date_formed": "2022-07-22"
+    },
+    {
+      "group_id": 2,
+      "group_name": "K-Rhythms",
+      "date_formed": "2021-05-15"
+    },
+    {
+      "group_id": 3,
+      "group_name": "Starlightz",
+      "date_formed": "2020-03-10"
+    }
+  ],
+  "idols": [
+    {
+      "idol_id": 1,
+      "stage_name": "Minji",
+      "position": "Rapper",
+      "nationality": "Korean",
+      "birthday": "2004-05-07",
+      "height_in_cm": 169,
+      "mbti_type": "ESTJ-T",
+      "zodiac_sign": "Taurus",
+      "chinese_zodiac_sign": "Monkey",
+      "favorite_color": "Yellow",
+      "group_id": 1
+    },
+    {
+      "idol_id": 2,
+      "stage_name": "Hanni",
+      "position": "Vocalist",
+      "nationality": "Vietnamese-Australian",
+      "birthday": "2004-10-06",
+      "height_in_cm": 162,
+      "mbti_type": "INFP",
+      "zodiac_sign": "Libra",
+      "chinese_zodiac_sign": "Monkey",
+      "favorite_color": "Pink",
+      "group_id": 1
+    },
+    {
+      "idol_id": 3,
+      "stage_name": "Danielle",
+      "position": "Vocalist",
+      "nationality": "Korean-Australian",
+      "birthday": "2005-04-11",
+      "height_in_cm": 165,
+      "mbti_type": "ENFP",
+      "zodiac_sign": "Aries",
+      "chinese_zodiac_sign": "Rooster",
+      "favorite_color": "Green",
+      "group_id": 1
+    },
+    {
+      "idol_id": 4,
+      "stage_name": "Haerin",
+      "position": "Dancer",
+      "nationality": "Korean",
+      "birthday": "2006-05-15",
+      "height_in_cm": 165,
+      "mbti_type": "ISTP",
+      "zodiac_sign": "Taurus",
+      "chinese_zodiac_sign": "Dog",
+      "favorite_color": "White",
+      "group_id": 2
+    },
+    {
+      "idol_id": 5,
+      "stage_name": "Hyein",
+      "position": "Maknae",
+      "nationality": "Korean",
+      "birthday": "2008-04-21",
+      "height_in_cm": 170,
+      "mbti_type": "INFP",
+      "zodiac_sign": "Taurus",
+      "chinese_zodiac_sign": "Rat",
+      "favorite_color": "Light Blue",
+      "group_id": 3
+    }
+  ]
+}
