@@ -16,7 +16,7 @@ export async function findAllGroups() {
 export async function findGroupById(groupId) {
   try {
     console.log('Fetching group with ID:', groupId);
-    const response = await fetch(`${BASE_URL}/groups/${groupId}`);;
+    const response = await fetch(`${BASE_URL}/groups?group_id=${groupId}`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -36,7 +36,3 @@ export async function findIdolsByGroupId(groupId) {
     throw error;
   }
 }
-
-
-
-
