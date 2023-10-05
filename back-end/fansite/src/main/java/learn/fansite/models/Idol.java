@@ -14,7 +14,7 @@ public class Idol {
     private int id;
     @NotBlank(message = "Stage Name is required")
     private String stageName;
-
+    // No validation
     private String position;
     @NotBlank(message = "Nationality is required")
     private String nationality;
