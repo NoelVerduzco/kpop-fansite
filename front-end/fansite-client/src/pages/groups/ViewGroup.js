@@ -18,13 +18,13 @@ function ViewGroup() {
   }, [groupId]);
 
   return (
-    <div className="container">
+    <div className="container d-flex align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
       {group && (
-        <div className="card border-dark mb-3">
-          <div className="card-header">{group.group_name}</div>
+        <div className="card border-dark mb-3" style={{ width: '50%' }}>
+          <div className="card-header text-center" style={{ fontSize: '24px', textAlign: 'center' }}>Group Name: {group.group_name}</div>
           <div className="card-body">
-            <h4 className="card-title">Year Formed: {group.date_formed}</h4>
-            <h5 className="card-subtitle mb-2 text-muted">Idols:</h5>
+            <h4 className="card-title text-center">Year Formed: {group.date_formed}</h4>
+            <h5 className="card-subtitle mb-2 text-muted text-center">Idols:</h5>
             <ul>
               {idols.map((idol) => (
                 <li key={idol.idol_id}>
