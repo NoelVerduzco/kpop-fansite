@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/groups/:groupId" element={<ViewGroup />} />
         <Route path="/groups" element={<ViewGroups />} />
-        <Route path="/idol/:idolId" element={<ViewIdol />} />
+        <Route path="/idol/:id" element={<ViewIdol />} />
         <Route path="/idols" element={<ViewIdols />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

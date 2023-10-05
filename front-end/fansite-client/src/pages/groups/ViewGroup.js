@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { findGroupById, findIdolsByGroupId } from '../../services/data';
 import dateFormatter from '../../components/DateFormatter';
 
@@ -24,12 +24,12 @@ function ViewGroup() {
         <div className="card border-dark mb-3" style={{ width: '50%' }}>
           <div className="card-header text-center" style={{ fontSize: '24px', textAlign: 'center' }}>{group.group_name}</div>
           <div className="card-body">
-          <h4 className="card-title text-center">Date Formed: {dateFormatter(group.date_formed)}</h4>
+            <h4 className="card-title text-center">Date Formed: {dateFormatter(group.date_formed)}</h4>
             <h5 className="card-subtitle mb-2 text-muted text-center">Idols:</h5>
             <ul>
               {idols.map((idol) => (
                 <li key={idol.id}>
-                  {idol.stage_name} - {idol.position}
+                  <Link to={`/idol/${idol.id}`}>{idol.stage_name} - {idol.position}</Link>
                 </li>
               ))}
             </ul>

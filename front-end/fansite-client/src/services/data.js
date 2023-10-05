@@ -36,3 +36,15 @@ export async function findIdolsByGroupId(groupId) {
     throw error;
   }
 }
+
+export async function findIdolById(idolId) {
+  try {
+    const response = await fetch(`${BASE_URL}/idols?id=${idolId}`);
+    const data = await response.json();
+    return data[0]; 
+  } catch (error) {
+    console.error('Error fetching idol by ID:', error);
+    throw error;
+  }
+}
+
