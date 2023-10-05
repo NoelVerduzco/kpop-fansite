@@ -1,12 +1,19 @@
 package learn.fansite.models;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Group {
 
+    @Min(value = 0)
     private int id;
+    @NotBlank(message = "Group Name is required")
     private String groupName;
+    @PastOrPresent(message = "Date Formed cannot be in the future")
     private LocalDate dateFormed;
 
     public Group() {
