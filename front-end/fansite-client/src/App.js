@@ -23,8 +23,8 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/groups/:groupId" element={<ViewGroup />} />
         <Route path="/groups" element={<ViewGroups />} />
-        <Route path="/idol/:id" element={<ViewIdol />} />
         <Route path="/idols" element={<ViewIdols />} />
+        <Route path="/idols/:id" element={<ViewIdol />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />

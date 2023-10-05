@@ -1,8 +1,7 @@
 const BASE_URL = 'http://localhost:4000'; // TODO switch to BACKEND SERVER URL
 
-const endpointUrl = BASE_URL + '/groups';
-
 export async function findAllGroups() {
+  const endpointUrl = BASE_URL + '/groups';
   try {
     const response = await fetch(endpointUrl);
     const data = await response.json();
@@ -37,6 +36,20 @@ export async function findIdolsByGroupId(groupId) {
   }
 }
 
+
+export async function findAllIdols() {
+  const endpointUrl = `${BASE_URL}/idols`;
+
+  try {
+    const response = await fetch(endpointUrl);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching idols data:', error);
+    throw error;
+  }
+}
+
 export async function findIdolById(idolId) {
   try {
     const response = await fetch(`${BASE_URL}/idols?id=${idolId}`);
@@ -47,4 +60,3 @@ export async function findIdolById(idolId) {
     throw error;
   }
 }
-
