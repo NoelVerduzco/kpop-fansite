@@ -12,7 +12,7 @@ CREATE TABLE `Group` (
 CREATE TABLE `Idol` (
 	`idol_id` INT NOT NULL AUTO_INCREMENT,
 	`stage_name` varchar(50) NOT NULL,
-	`position` varchar(50) NOT NULL,
+	`position` varchar(50) NULL,
 	`nationality` varchar(50) NOT NULL,
 	`birthday` DATE NOT NULL,
 	`height_in_cm` int NOT NULL,
@@ -34,6 +34,6 @@ INSERT INTO `Group` VALUES
 INSERT INTO `Idol` VALUES
 (1, 'Minji', 'Rapper', 'Korean', '2004-05-07', 169, 'ESTJ-T', 'Taurus', 'Monkey', 'Yellow', 1),
 (2, 'Hanni', 'Vocalist', 'Vietnamese-Australian', '2004-10-06', 162, 'INFP', 'Libra', 'Monkey', 'Pink', 1),
-(3, 'Danielle', '', 'Korean-Australian', '2005-04-11', 165, 'ENFP', 'Aries', 'Rooster', 'Green', 1),
-(4, 'Haerin', '', 'Korean', '2006-05-15', 165, 'ISTP', 'Taurus', 'Dog', 'White', 1),
+(3, 'Danielle', NULL, 'Korean-Australian', '2005-04-11', 165, 'ENFP', 'Aries', 'Rooster', 'Green', 1),
+(4, 'Haerin', NULL, 'Korean', '2006-05-15', 165, 'ISTP', 'Taurus', 'Dog', 'White', 1),
 (5, 'Hyein', 'Maknae', 'Korean', '2008-04-21', 170, 'INFP', 'Taurus', 'Rat', 'Light Blue', 1);
