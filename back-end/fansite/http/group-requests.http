@@ -1,0 +1,11 @@
+@BASE_URL = http://localhost:8080/api/fansite/kpop/group
+
+GET {{BASE_URL}} HTTP/1.1
+
+###
+
+GET {{BASE_URL}}/1 HTTP/1.1
+
+###
+
+GET {{BASE_URL}}/999 HTTP/1.1

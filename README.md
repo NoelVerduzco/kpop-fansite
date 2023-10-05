@@ -10,16 +10,16 @@
 #### For groups content:
 * BASE URL: `http://localhost:3000/api/fansite/kpop/group`
 * GET ALL: `BASE URL`
-* GET w/ ID: `/{groupId}`
+* GET w/ ID: `/{id}`
 * POST: `BASE URL`
-* DELETE: `/{groupId}`
+* DELETE: `/{id}`
 
 #### For artists content:
-* BASE URL: `http://localhost:3000/api/fansite/kpop/artist`
+* BASE URL: `http://localhost:3000/api/fansite/kpop/idol`
 * GET ALL: `BASE URL`
-* GET w/ ID: `/{artistId}`
+* GET w/ ID: `/{id}`
 * POST: `BASE URL`
-* DELETE: `/{artistId}`
+* DELETE: `/{id}`
 
 ## Database Design:
 * Groups
