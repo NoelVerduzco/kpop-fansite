@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import favicon from '../assets/favicon.png';
 
 function NavBar({ handleSearch }) {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const query = formData.get('searchQuery');
-  
     handleSearch(query, navigate);
+    setSearchQuery('');
   };
 
   return (
@@ -47,6 +48,8 @@ function NavBar({ handleSearch }) {
             className="form-control me-sm-2"
             type="search"
             placeholder="Search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button className="btn btn-secondary my-2 my-sm-0" type="submit">
             Search
