@@ -63,7 +63,7 @@ function ViewIdols() {
               <tr className="table-primary" key={idol.id} onClick={() => handleIdolClick(idol.id)}>
                 <td>{idol.stage_name}</td>
                 <td>{groups[idol.group_id]}</td> 
-                <td>{idol.position}</td>
+                <td>{idol.position == null ? "Unassigned" : idol.position}</td>
                 <td>{idol.nationality}</td>
                 <td>{dateFormatter(idol.birthday)}</td>
                 <td>{idol.height_in_cm}</td>

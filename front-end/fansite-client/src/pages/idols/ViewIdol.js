@@ -25,10 +25,9 @@ function ViewIdol() {
             <div className="card-header text-center" style={{ fontSize: '24px', textAlign: 'center' }}>
               {idol.stage_name}
             </div>
+            <img src={require('../../assets/idols/' + idol.stage_name.toLowerCase() + '.jpeg')} class="card-img-top" alt="..."/>
             <div className="card-body">
-              {/* TODO Display the image */}
-              {/* {imageUrl && <img src={imageUrl} alt={`${idol.stage_name}`} className="img-fluid" />} */}
-              <h4 className="card-title text-center">Position: {idol.position}</h4>
+              <h4 className="card-title text-center">Position: {idol.position == null ? "Unassigned" : idol.position}</h4>
               <ul>
                 <li>Nationality: {idol.nationality}</li>
                 <li>Birthday: {idol.birthday}</li>

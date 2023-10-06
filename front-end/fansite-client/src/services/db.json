@@ -46,7 +46,7 @@
     {
       "id": 3,
       "stage_name": "Danielle",
-      "position": "Vocalist",
+      "position": null,
       "nationality": "Korean-Australian",
       "birthday": "2005-04-11",
       "height_in_cm": 165,
@@ -59,7 +59,7 @@
     {
       "id": 4,
       "stage_name": "Haerin",
-      "position": "Dancer",
+      "position": null,
       "nationality": "Korean",
       "birthday": "2006-05-15",
       "height_in_cm": 165,
