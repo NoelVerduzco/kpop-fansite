@@ -1,8 +1,19 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import favicon from '../assets/favicon.png';
 
-function NavBar() {
+function NavBar({ handleSearch }) {
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const query = formData.get('searchQuery');
+    handleSearch(query, navigate);
+    setSearchQuery('');
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" style={{ padding: '10px' }}>
       <div className="d-flex align-items-center justify-content-between w-100">
@@ -31,6 +42,19 @@ function NavBar() {
             </NavLink>
           </li>
         </ul>
+        <form className="d-flex" onSubmit={handleSubmit}>
+          <input
+            name="searchQuery"
+            className="form-control me-sm-2"
+            type="search"
+            placeholder="Search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          <button className="btn btn-secondary my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </nav>
   );
