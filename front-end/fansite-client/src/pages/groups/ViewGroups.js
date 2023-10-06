@@ -36,8 +36,8 @@ function ViewGroups() {
           <tbody>
             {groups.map((group) => (
               <tr className="table-primary" key={group.id} onClick={() => handleGroupClick(group.id)}>
-                <td>{group.group_name}</td>
-                <td>{group.date_formed}</td>
+                <td>{group.groupName}</td>
+                <td>{group.dateFormed}</td>
               </tr>
             ))}
           </tbody>
