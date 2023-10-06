@@ -5,6 +5,19 @@
 * Jeanmarie Jackman
 * Noel Verduzco
 
+## First Time Setup
+* `npm install`
+* `npm install -g json-server`
+* `npm install react-router-dom`
+* `npm install bootstrap`
+* `npm install bootswatch`
+
+## Starting The JSON Server and React App
+* Start json-server in `/fansite/front-end/fansite-client/src/services` with command `json-server --watch db.json`
+  * Should start on port 3000
+* Start fansite-client in `/fansite/front-end/fansite-client` with command `npm start`
+  * Should be prompted to start on a different port since 3000 is already in use by json-server, choose Y to use alt port
+
 ## Endpoints:
 
 #### For groups content:

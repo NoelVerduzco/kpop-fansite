@@ -10,7 +10,7 @@ function ViewIdol() {
 
   useEffect(() => {
     findIdolById(id)
-      .then((data) => setIdol(data))
+      .then((data) => setIdol(data[0]))
       .catch((error) => console.error('Error fetching idol:', error));
   }, [id]);
 
