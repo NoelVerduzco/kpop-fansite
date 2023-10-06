@@ -29,7 +29,18 @@ ALTER TABLE `Idol` ADD CONSTRAINT `fk_Idol_group_id` FOREIGN KEY (`group_id`) RE
 -- DATA
 
 INSERT INTO `Group` VALUES
-(1, 'NewJeans', '2022-07-22');
+(1, 'NewJeans', '2022-07-22'),
+(2, 'TWICE', '2022-07-22'),
+(3, 'XG', '2022-07-22'),
+(4, 'BIBI', '2022-07-22'),
+(5, 'LE SSERAFIM', '2022-07-22'),
+(6, '(G)I-DLE', '2022-07-22'),
+(7, 'IVE', '2022-07-22'),
+(8, 'ITZY', '2022-07-22'),
+(9, 'aespa', '2022-07-22'),
+(10, 'BLACKPINK', '2022-07-22'),
+(11, 'JEON SOMI', '2022-07-22'),
+(12, 'Red Velvet', '2022-07-22');
 
 INSERT INTO `Idol` VALUES
 (1, 'Minji', 'Rapper', 'Korean', '2004-05-07', 169, 'ESTJ-T', 'Taurus', 'Monkey', 'Yellow', 1),

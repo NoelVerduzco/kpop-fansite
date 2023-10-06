@@ -1,21 +1,4 @@
 {
-  "groups": [
-    {
-      "id": 1,
-      "group_name": "NewJeans",
-      "date_formed": "2022-07-22"
-    },
-    {
-      "id": 2,
-      "group_name": "K-Rhythms",
-      "date_formed": "2021-05-15"
-    },
-    {
-      "id": 3,
-      "group_name": "Starlightz",
-      "date_formed": "2020-03-10"
-    }
-  ],
   "idols": [
     {
       "id": 1,
