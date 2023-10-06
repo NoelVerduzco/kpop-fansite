@@ -58,6 +58,7 @@ export async function findAllIdols() {
         const content = response.json();
         return content;
     } else {
+        
         return Promise.reject(
             new Error(`Unexpected status code ${response.status}`)
         );
