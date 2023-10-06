@@ -26,6 +26,16 @@ export async function findGroupById(groupId) {
     }
 }
 
+export async function searchGroups(query) {
+    const response = await fetch(`${MYSQL_URL}/api/fansite/kpop/group?search=${query}`);
+    if (response.ok) {
+      const content = await response.json();
+      return content;
+    } else {
+      throw new Error(`Unexpected status code ${response.status}`);
+    }
+  }
+
 // ALL IDOL DATA IS RETRIEVED FROM THE JSON SERVER DATABASE
 // JSON SERVER USES snake_case CASE FOR KEYS
 const JSON_SERVER_URL = 'http://localhost:3000';
@@ -65,3 +75,14 @@ export async function findIdolById(idolId) {
         );
     }
 }
+
+ 
+  export async function searchIdols(query) {
+    const response = await fetch(`${JSON_SERVER_URL}/idols?search=${query}`);
+    if (response.ok) {
+      const content = await response.json();
+      return content;
+    } else {
+      throw new Error(`Unexpected status code ${response.status}`);
+    }
+  }

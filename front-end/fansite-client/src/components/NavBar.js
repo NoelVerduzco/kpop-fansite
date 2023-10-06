@@ -3,15 +3,17 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import favicon from '../assets/favicon.png';
 
 function NavBar({ handleSearch }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const query = formData.get('searchQuery');
-    handleSearch(query, navigate);
+    handleSearch(query); 
     setSearchQuery('');
+
+    navigate('/search-results?query=' + query);
   };
 
   return (
