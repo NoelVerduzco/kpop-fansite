@@ -29,7 +29,7 @@ function ViewGroup() {
             <ul>
               {idols.map((idol) => (
                 <li key={idol.id}>
-                  <Link to={`/idols/${idol.id}`}>{idol.stage_name} - {idol.position}</Link>
+                  <Link to={`/idols/${idol.id}`}>{idol.stage_name} - {idol.position == null ? "Unassigned" : idol.position}</Link>
                 </li>
               ))}
             </ul>
