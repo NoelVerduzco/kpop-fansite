@@ -6,7 +6,7 @@ function About() {
             className="container text-center mt-5"
             style={{ minHeight: '80vh' }}
         >
-            <h1 className="text-primary">About Our Sassy K-pop Wonderland</h1>
+            <h1 className="text-center text-primary mt-4">About Our Sassy K-pop Wonderland</h1>
 
             <div className="container w-75">
                 <h2 className="text-secondary">

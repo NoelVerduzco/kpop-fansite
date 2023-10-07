@@ -46,8 +46,11 @@ function ViewIdols() {
     }, []);
 
     return (
-        <div>
-            <h1 className="text-center text-primary mt-4">KPop Idols</h1>
+        <div
+        className="container text-center mt-5"
+        style={{ minHeight: '80vh' }}
+    >
+            <h1 className="text-center mt-4">KPop Idols</h1>
             <div className="table-container">
                 <table className="table table-hover">
                     <thead>

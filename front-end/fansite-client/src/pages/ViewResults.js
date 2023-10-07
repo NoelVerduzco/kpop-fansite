@@ -13,8 +13,11 @@ function ViewResults({ results, query }) {
     };
 
     return (
-        <div>
-            <h1 className="text-center text-primary" >Results</h1>
+        <div
+        className="container text-center mt-5"
+        style={{ minHeight: '80vh' }}
+    >
+            <h1 className="text-center" >Results</h1>
             <div className="table-container">
 
             {results.length > 0 ? (

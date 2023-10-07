@@ -2,10 +2,13 @@ import React from 'react';
 
 export default function Contact() {
     return (
-        <div className="container text-center">
-            <h1>Contact Us</h1>
-            <div className="row justify-content-center">
-                <div className="col-md-4 mb-3">
+        <div
+        className="container text-center mt-5"
+        style={{ minHeight: '80vh' }}
+    >
+            <h1 className="text-center mt-4">Contact Us</h1>
+            <div className="row justify-content-center" >
+                <div className="col-md-4 mb-3" >
                     {/* TODO: find out where the card flip styling needs to go */}
                     <div className="card border-dark card-flip">
                         <div className="card-header bg-primary text-white">

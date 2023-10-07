@@ -22,8 +22,10 @@ function ViewIdol() {
     }, [id]);
 
     return (
-        <div>
-            <h2 className="text-center mt-4">Idol Information</h2>
+        <div
+        className="container text-center mt-5"
+        style={{ minHeight: '80vh' }}
+    >
             {idol ? (
                 <div>
                     <div
