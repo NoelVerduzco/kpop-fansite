@@ -24,7 +24,7 @@ function ViewGroups() {
 
     return (
         <div>
-            <h1 className="text-center text-primary  mt-4">KPop Groups</h1>
+            <h1 className="text-center text-primary mt-4">KPop Groups</h1>
             <div className="table-container">
                 <table className="table table-hover">
                     <thead>

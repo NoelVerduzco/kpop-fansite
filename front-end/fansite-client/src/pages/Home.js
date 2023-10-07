@@ -5,8 +5,8 @@ function Home() {
     return (
         <div className="container text-center mt-5">
             <div className="text-content">
-                <h1 className="display-4">Kpop Fansite</h1>
-                <p className="lead">Your source for all things Kpop!</p>
+                <h1 className="display-4">K-pop Fansite</h1>
+                <p className="lead">Your source for all things K-pop!</p>
             </div>
             <div className="image-container">
                 <img
