@@ -53,7 +53,7 @@ function ViewIdols() {
                     <thead>
                         <tr>
                             <th scope="col">Stage Name</th>
-                            <th scope="col">Group</th>
+                            {/* <th scope="col">Group</th> */}
                             <th scope="col">Position</th>
                             <th scope="col">Nationality</th>
                             <th scope="col">Birthday</th>
@@ -72,7 +72,7 @@ function ViewIdols() {
                                 onClick={() => handleIdolClick(idol.id)}
                             >
                                 <td>{idol.stage_name}</td>
-                                <td>{groups[idol.group_id]}</td>
+                                {/* <td>{groups[idol.group_id]}</td> */}
                                 <td>{idol.position}</td>
                                 <td>{idol.nationality}</td>
                                 <td>{dateFormatter(idol.birthday)}</td>
