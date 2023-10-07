@@ -3,19 +3,21 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import favicon from '../assets/favicon.png';
 
 function NavBar({ handleSearch }) {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const query = formData.get('searchQuery');
-    handleSearch(query, navigate);
+    handleSearch(query); 
     setSearchQuery('');
+
+    navigate('/search-results?query=' + query);
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" style={{ padding: '10px' }}>
+    <nav className="navbar navbar-expand-lg bg-dark  sticky-top" data-bs-theme="dark" style={{ padding: '10px' }}>
       <div className="d-flex align-items-center justify-content-between w-100">
         <NavLink className='navbar-brand' to='/'>
           <img src={favicon} alt="Favicon" width="30" height="30" className="d-inline-block align-top" /> KPop
