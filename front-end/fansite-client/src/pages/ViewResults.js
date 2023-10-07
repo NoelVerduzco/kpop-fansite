@@ -1,37 +1,27 @@
-import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function ViewResults({ results }) {
+function ViewResults({ results, query }) {
     const navigate = useNavigate();
 
     const handleResultClick = (index) => {
         const result = results[index];
         if (result.groupName) {
-            // It's a group, navigate to the group view
             navigate(`/groups/${result.id}`);
         } else if (result.stage_name) {
-            // It's an idol, navigate to the idol view
             navigate(`/idols/${result.id}`);
         }
     };
 
-    const handleGroupClick = (groupId) => {
-        navigate(`/groups/${groupId}`);
-    };
-
-    const handleIdolClick = (idolId) => {
-        console.log('Clicked on idol with ID:', idolId);
-        navigate(`/idols/${idolId}`);
-    };
-
     return (
         <div>
-            <h1 className="text-center text-primary">Results</h1>
+            <h1 className="text-center text-primary" >Results</h1>
             <div className="table-container">
+
+            {results.length > 0 ? (
                 <table className="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">Result</th>
+                            <th scope="col">Groups</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,11 +31,38 @@ function ViewResults({ results }) {
                                 key={index}
                                 onClick={() => handleResultClick(index)}
                             >
-                                <td>{result.groupName || result.stage_name}</td>
+                                <td>{result.groupName ? result.groupName : null}</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
+            ) : null}
+
+            {results.length > 0 ? (
+                <table className="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Idols</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {results.map((result, index) => (
+                            <tr
+                                className="table-primary"
+                                key={index}
+                                onClick={() => handleResultClick(index)}
+                            >
+                                <td>{result.stage_name ? result.stage_name : null}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            ) : null}
+
+            {results.length === 0 && (
+                <h3 className="text-center text-secondary">Sorry, there are no results matching your search.</h3>
+            )}
+
             </div>
         </div>
     );
