@@ -11,6 +11,7 @@
 * `npm install react-router-dom`
 * `npm install bootstrap`
 * `npm install bootswatch`
+* `npm install react-player`
 
 ## Starting The JSON Server and React App
 * Start json-server in `/fansite/front-end/fansite-client/src/services` with command `json-server --watch db.json`
