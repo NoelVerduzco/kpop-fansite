@@ -22,6 +22,7 @@ import NotFound from './pages/NotFound';
 import ViewResults from './pages/ViewResults';
 
 import { searchGroups, searchIdols } from './services/data';
+import YouTubeVideoPlayer from './pages/YouTubeVideoPlayer';
 
 function App() {
     const [results, setResults] = useState([]);
@@ -69,6 +70,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Outlet />}>
                     <Route index element={<Home />} />
+                    <Route path="youtube/player" element={<YouTubeVideoPlayer />} />
                     <Route path="groups/*" element={<ViewGroups />} />
                     <Route path="groups/:groupId" element={<ViewGroup />} />
                     <Route path="idols/*" element={<ViewIdols />} />

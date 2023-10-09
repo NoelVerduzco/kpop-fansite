@@ -1,50 +1,57 @@
 .table-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 85%; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
 }
 
-
 .text-content {
-  margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .image-container {
-  text-align: center; 
+    text-align: center;
 }
 
 .responsive-image {
-  max-width: 100%; 
-  height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
 .card-flip {
-  position: relative;
-  perspective: 1000px; 
+    position: relative;
+    perspective: 1000px;
 
-
-  .card-body {
-    transform-style: preserve-3d; 
-    transition: transform 0.5s; 
-
-    transform: rotateY(0deg);
-  }
-
-
-  .card-back {
-    display: none; 
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    transform: rotateY(180deg); 
-  }
-
-  &:hover {
     .card-body {
-      transform: rotateY(180deg); 
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+
+        transform: rotateY(0deg);
     }
+
     .card-back {
-      display: block; 
-      transform: rotateY(0deg); 
+        display: none;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        transform: rotateY(180deg);
     }
-  }
+
+    &:hover {
+        .card-body {
+            transform: rotateY(180deg);
+        }
+        .card-back {
+            display: block;
+            transform: rotateY(0deg);
+        }
+    }
+}
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
