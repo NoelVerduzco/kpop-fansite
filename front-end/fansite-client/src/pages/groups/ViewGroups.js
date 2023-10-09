@@ -27,7 +27,7 @@ function ViewGroups() {
         className="container text-center mt-5"
         style={{ minHeight: '80vh' }}
     >
-            <h1 className="text-center mt-4">KPop Groups</h1>
+            <h1 className="text-center mt-4">K-Pop Groups</h1>
             <div className="table-container">
                 <table className="table table-hover">
                     <thead>

@@ -38,9 +38,9 @@ INSERT INTO `Group` VALUES
 (7, 'BLACKPINK', '2016-08-08'),
 (8, 'Red Velvet', '2014-08-01');
 
-INSERT INTO `Idol` VALUES
-(1, 'Minji', 'Rapper', 'Korean', '2004-05-07', 169, 'ESTJ-T', 'Taurus', 'Monkey', 'Yellow', 1),
-(2, 'Hanni', 'Vocalist', 'Vietnamese-Australian', '2004-10-06', 162, 'INFP', 'Libra', 'Monkey', 'Pink', 1),
-(3, 'Danielle', NULL, 'Korean-Australian', '2005-04-11', 165, 'ENFP', 'Aries', 'Rooster', 'Green', 1),
-(4, 'Haerin', NULL, 'Korean', '2006-05-15', 165, 'ISTP', 'Taurus', 'Dog', 'White', 1),
-(5, 'Hyein', 'Maknae', 'Korean', '2008-04-21', 170, 'INFP', 'Taurus', 'Rat', 'Light Blue', 1);
+-- INSERT INTO `Idol` VALUES
+-- (1, 'Minji', 'Rapper', 'Korean', '2004-05-07', 169, 'ESTJ-T', 'Taurus', 'Monkey', 'Yellow', 1),
+-- (2, 'Hanni', 'Vocalist', 'Vietnamese-Australian', '2004-10-06', 162, 'INFP', 'Libra', 'Monkey', 'Pink', 1),
+-- (3, 'Danielle', NULL, 'Korean-Australian', '2005-04-11', 165, 'ENFP', 'Aries', 'Rooster', 'Green', 1),
+-- (4, 'Haerin', NULL, 'Korean', '2006-05-15', 165, 'ISTP', 'Taurus', 'Dog', 'White', 1),
+-- (5, 'Hyein', 'Maknae', 'Korean', '2008-04-21', 170, 'INFP', 'Taurus', 'Rat', 'Light Blue', 1);

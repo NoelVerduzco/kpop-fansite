@@ -50,21 +50,15 @@ function ViewIdols() {
         className="container text-center mt-5"
         style={{ minHeight: '80vh' }}
     >
-            <h1 className="text-center mt-4">KPop Idols</h1>
+            <h1 className="text-center mt-4">K-Pop Idols</h1>
             <div className="table-container">
                 <table className="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Stage Name</th>
-                            {/* <th scope="col">Group</th> */}
                             <th scope="col">Position</th>
                             <th scope="col">Nationality</th>
                             <th scope="col">Birthday</th>
-                            <th scope="col">Height (cm)</th>
-                            <th scope="col">MBTI Type</th>
-                            <th scope="col">Zodiac Sign</th>
-                            <th scope="col">Chinese Zodiac Sign</th>
-                            <th scope="col">Favorite Color</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,15 +69,9 @@ function ViewIdols() {
                                 onClick={() => handleIdolClick(idol.id)}
                             >
                                 <td>{idol.stage_name}</td>
-                                {/* <td>{groups[idol.group_id]}</td> */}
                                 <td>{idol.position}</td>
                                 <td>{idol.nationality}</td>
                                 <td>{dateFormatter(idol.birthday)}</td>
-                                <td>{idol.height_in_cm}</td>
-                                <td>{idol.mbti_type}</td>
-                                <td>{idol.zodiac_sign}</td>
-                                <td>{idol.chinese_zodiac_sign}</td>
-                                <td>{idol.favorite_color}</td>
                             </tr>
                         ))}
                     </tbody>

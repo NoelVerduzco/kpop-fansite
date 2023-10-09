@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { findIdolById, findGroupById } from '../../services/data';
+import dateFormatter from '../../components/DateFormatter';
 
 function ViewIdol() {
     const { id = 'defaultId' } = useParams();
@@ -56,7 +57,7 @@ function ViewIdol() {
                             </h4>
                             <ul>
                                 <li>Nationality: {idol.nationality}</li>
-                                <li>Birthday: {idol.birthday}</li>
+                                <li>Birthday: {dateFormatter(idol.birthday)}</li>
                                 <li>Height: {idol.height_in_cm} cm</li>
                                 <li>MBTI Type: {idol.mbti_type}</li>
                                 <li>Zodiac Sign: {idol.zodiac_sign}</li>

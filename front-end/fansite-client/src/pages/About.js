@@ -6,15 +6,15 @@ function About() {
             className="container text-center mt-5"
             style={{ minHeight: '80vh' }}
         >
-            <h1 className="text-center text-primary mt-4">About Our Sassy K-pop Wonderland</h1>
+            <h1 className="text-center text-primary mt-4">About Our Sassy K-Pop Wonderland</h1>
 
             <div className="container w-75">
                 <h2 className="text-secondary">
-                    Hey There, K-pop Enthusiasts!
+                    Hey There, K-Pop Enthusiasts!
                 </h2>
                 <p className="text-dark">
-                    Welcome to Kpop Fansite, where we're all about celebrating
-                    K-pop in the sassiest way possible!
+                    Welcome to K-Pop Fansite, where we're all about celebrating
+                    K-Pop in the sassiest way possible!
                 </p>
                 <div className="accordion" id="accordionExample">
                     {/* Accordion Item 1 */}
@@ -28,7 +28,7 @@ function About() {
                                 aria-expanded="false"
                                 aria-controls="collapseOne"
                             >
-                                What Exactly is K-pop?
+                                What Exactly is K-Pop?
                             </button>
                         </h2>
                         <div
@@ -38,12 +38,12 @@ function About() {
                             data-bs-parent="#accordionExample"
                         >
                             <div className="accordion-body">
-                                K-pop, short for Korean pop sensation, isn't
+                                K-Pop, short for Korean pop sensation, isn't
                                 just music; it's a global movement that's got
                                 the world dancing, singing, and screaming
                                 "Encore!" It's where catchy tunes meet
                                 jaw-dropping choreography, and fashion
-                                statements make runway models jealous. K-pop
+                                statements make runway models jealous. K-Pop
                                 isn't just an entertainment genre; it's a
                                 lifestyle!
                             </div>
@@ -71,7 +71,7 @@ function About() {
                             data-bs-parent="#accordionExample"
                         >
                             <div className="accordion-body">
-                                K-pop's origin story goes way back to the '90s,
+                                K-Pop's origin story goes way back to the '90s,
                                 but it hit the international stage with a bang
                                 in the late 2000s and early 2010s. Today, it's a
                                 worldwide phenomenon, captivating hearts and
@@ -91,7 +91,7 @@ function About() {
                                 aria-expanded="false"
                                 aria-controls="collapseThree"
                             >
-                                What Makes K-pop So Darn Great?
+                                What Makes K-Pop So Darn Great?
                             </button>
                         </h2>
                         <div
@@ -101,10 +101,10 @@ function About() {
                             data-bs-parent="#accordionExample"
                         >
                             <div className="accordion-body">
-                                <h3>What Makes K-pop So Darn Great?</h3>
+                                <h3>What Makes K-Pop So Darn Great?</h3>
                                 <ul>
                                     <li>
-                                        Superstar Idols: Our beloved K-pop idols
+                                        Superstar Idols: Our beloved K-Pop idols
                                         are like real-life superheroes, armed
                                         with stunning vocal chops, dance moves
                                         that defy gravity, and personalities
@@ -113,27 +113,27 @@ function About() {
                                     <li>
                                         Mind-Blowing Music Videos: Ever seen a
                                         music video that made you question
-                                        reality? K-pop MVs are basically art
+                                        reality? K-Pop MVs are basically art
                                         installations that come to life.
                                     </li>
                                     <li>
-                                        Genre Blender: K-pop refuses to be
+                                        Genre Blender: K-Pop refuses to be
                                         pigeonholed. It's a wild mix of genres,
                                         from hip-hop and EDM to ballads and
                                         bubblegum pop. Don't pick a favorite;
                                         you'll need them all.
                                     </li>
                                     <li>
-                                        World Domination: K-pop's lyrics are a
+                                        World Domination: K-Pop's lyrics are a
                                         global melting pot, and many groups have
                                         members from all corners of the planet.
                                         It's like the United Nations of music,
                                         but way more fabulous.
                                     </li>
                                     <li>
-                                        Fandom Frenzy: K-pop fandoms aren't just
+                                        Fandom Frenzy: K-Pop fandoms aren't just
                                         fans; they're family. They ride the
-                                        K-pop rollercoaster with their idols
+                                        K-Pop rollercoaster with their idols
                                         through thick and thin.
                                     </li>
                                 </ul>
@@ -152,7 +152,7 @@ function About() {
                                 aria-expanded="false"
                                 aria-controls="collapseFour"
                             >
-                                Fun-tastic K-pop Tidbits
+                                Fun-tastic K-Pop Tidbits
                             </button>
                         </h2>
                         <div
@@ -162,13 +162,13 @@ function About() {
                             data-bs-parent="#accordionExample"
                         >
                             <div className="accordion-body">
-                                <h3>Fun-tastic K-pop Tidbits</h3>
+                                <h3>Fun-tastic K-Pop Tidbits</h3>
                                 <ul>
                                     <li>
-                                        Did you know the first-ever K-pop group,
+                                        Did you know the first-ever K-Pop group,
                                         Seo Taiji and Boys, dropped their debut
                                         track in 1992? They basically planted
-                                        the K-pop seed that grew into the K-pop
+                                        the K-Pop seed that grew into the K-Pop
                                         forest we know today!
                                     </li>
                                     <li>
@@ -178,32 +178,32 @@ function About() {
                                         take notes!
                                     </li>
                                     <li>
-                                        K-pop idols have some of the quirkiest
+                                        K-Pop idols have some of the quirkiest
                                         stage names in showbiz. Who wouldn't
                                         want to be called "V," "J-Hope," or
                                         "Lisa"?
                                     </li>
                                     <li>
                                         The term "Hallyu" is Korean for "wave,"
-                                        and K-pop's riding it like a pro surfer,
+                                        and K-Pop's riding it like a pro surfer,
                                         making waves of music, drama, and
                                         fashion worldwide.
                                     </li>
                                 </ul>
 
                                 <p>
-                                    Explore our fansite for the hottest K-pop
+                                    Explore our fansite for the hottest K-Pop
                                     gossip, the sassiest interviews, and music
                                     videos that are basically visual
                                     masterpieces. Join us in celebrating the
-                                    fabulousness of K-pop and the mind-blowing
+                                    fabulousness of K-Pop and the mind-blowing
                                     talents of our favorite artists!
                                 </p>
 
                                 <p>
                                     Thanks for stopping by! Let's turn up the
                                     volume and dance like nobody's watching
-                                    because in K-pop, every day is a party!
+                                    because in K-Pop, every day is a party!
                                 </p>
                             </div>
                         </div>
