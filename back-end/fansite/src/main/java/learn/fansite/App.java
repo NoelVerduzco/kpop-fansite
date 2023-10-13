@@ -12,23 +12,23 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-
-        // Configure CORS globally versus
-        // controller-by-controller.
-        // Can be combined with @CrossOrigin.
-        return new WebMvcConfigurer() {
-
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("*")
-                        // Should tighten up CORS policies.
-                        // For now, we allow everything.
-
-                        .allowedMethods("GET");
-            }
-        };
-    }
+//    @Bean
+//    public WebMvcConfigurer corsConfigurer() {
+//
+//        // Configure CORS globally versus
+//        // controller-by-controller.
+//        // Can be combined with @CrossOrigin.
+//        return new WebMvcConfigurer() {
+//
+//            @Override
+//            public void addCorsMappings(CorsRegistry registry) {
+//                registry.addMapping("/**")
+//                        .allowedOrigins("*")
+//                        // Should tighten up CORS policies.
+//                        // For now, we allow everything.
+//
+//                        .allowedMethods("GET");
+//            }
+//        };
+//    }
 }

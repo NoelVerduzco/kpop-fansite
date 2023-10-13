@@ -1,0 +1,46 @@
+@url = http://localhost:8080
+
+### Bad credentials... returns 403
+
+POST {{url}}/authenticate HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "bad-username",
+    "password": "bad-password"
+}
+
+### Good credentials... returns 200 with a JWT in the response body
+
+POST {{url}}/authenticate HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "john@smith.com",
+    "password": "P@ssw0rd!"
+}
+
+### Good credentials... returns 200 with a JWT in the response body
+
+POST {{url}}/authenticate HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "sally@jones.com",
+    "password": "P@ssw0rd!"
+}
+
+### Refresh token... be sure to replace the token in the Authorization header with a valid token
+
+POST {{url}}/refresh_token HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJidWctc2FmYXJpIiwic3ViIjoic2FsbHlAam9uZXMuY29tIiwiYXBwX3VzZXJfaWQiOjIsImF1dGhvcml0aWVzIjoiVVNFUiIsImV4cCI6MTY5NzIxMTU4NX0.egAV-9FcQy5Ff0QYjAMhzBEe6eFpN0x99jVICIL2Pdc
+
+### Create an account... returns 201
+
+POST {{url}}/create_account HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "bob@jones.com",
+  "password": "P@ssw0rd!"
+}
