@@ -1,5 +1,6 @@
 
-# Fansite Group Project
+# K-Pop Fansite
+Group Project
 
 ## Collaborators:
 * Jeanmarie Jackman
